@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occultis</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      box-sizing: border-box;
+    }
+
+    nav .logo img {
+      height: 80px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 0 60px;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .text-content {
+      width: 47%;
+    }
+
+    .text-content h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .text-content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .image-content {
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-top: 40px;
+    }
+
+    .image-content img {
+      display: block;
+      width: 85%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    .arrow img {
+      width: 40px;
+      cursor: pointer;
+      filter: brightness(0.8);
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 0;
+      text-align: center;
+      position: relative;
+      margin: 0;
+    }
+
+    .dark {
+      background-color: #111;
+      color: #fff;
+    }
+
+    .light {
+      background-color: #f5f5f5;
+      color: #000000;
+    }
+
+    .section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section-content {
+      padding: 50px;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .section h1 {
+      font-size: 2.5rem;
+      color: #ff3e3e;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      max-width: 600px;
+      font-size: 1.2rem;
+      margin: 20px auto;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="로고 누끼.png" alt="Occultis Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="places.html">Places</a>
+      <a href="rituals.html">Rituals</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="ghost-story.html">Ghost Story</a>
+      <a href="escape-room.html">Escape Room</a>
+    </div>
+  </nav>
+
+  <div class="main-content" id="places">
+    <div class="text-content">
+      <h1>"Step into the house <br> of eternal screams."</h1>
+      <p>
+        where the walls whisper your name, <br>
+        the shadows twist and writhe in the corners, <br>
+        and the air itself carries the weight of despair.
+      </p>
+    </div>
+    <div class="image-content">
+      <img src="메인 사진.png" alt="Main Room">
+    </div>
+    <div class="arrow">
+      <img src="화살표.png" alt="Scroll Down Arrow">
+    </div>
+  </div>
+
+  <section class="section dark" id="rituals">
+    <div class="section-content">
+      <h1>"The Ritual Begins"</h1>
+      <p>Ancient symbols glow faintly. <br> Will you join the ritual, or watch from the shadows?</p>
+    </div>
+    <img src="무서운 배경2.jpg" alt="Rituals Image">
+  </section>
+
+  <section class="section dark" id="experiences">
+    <div class="section-content">
+      <h1>"The Shadows Move"</h1>
+      <p>Every step echoes. Every whisper gets louder.<br>The shadows aren't just shadows anymore.</p>
+    </div>
+    <img src="무서운 배경10.jpg" alt="Shadows Image">
+  </section>
+
+  <section class="section dark" id="ghost-story">
+    <div class="section-content">
+      <h1>"The Darkness Awaits"</h1>
+      <p>As the light fades, shadows grow longer. <br> They are watching, waiting for your next step.</p>
+    </div>
+    <img src="무서운 배경9.jpg" alt="Darkness Image">
+  </section>
+
+  <section class="section light" id="escape-room">
+    <div class="section-content">
+      <h1>"Can You Escape?"</h1>
+      <p>The walls are closing in. <br> Time is running out. Will you leave, or stay forever?</p>
+    </div>
+    <img src="무서운 배경8.jpg" alt="Escape Image">
+  </section>
+
+  <footer>
+    <p>© 2024 Occultis. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

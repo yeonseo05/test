@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occultis - Rituals</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    nav .logo img {
+      height: 80px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .header img {
+      width: 100px;
+      height: auto;
+    }
+
+    .cards-container {
+      margin: 30px auto; 
+      padding: 20px;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      position: relative;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 530px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+
+    .card img.second {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .card:hover img.first {
+      opacity: 0;
+    }
+
+    .card:hover img.second {
+      opacity: 1;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="로고 누끼.png" alt="Occultis Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="places.html">Places</a>
+      <a href="rituals.html">Rituals</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="ghost-story.html">Ghost Story</a>
+      <a href="escape-room.html">Escape Room</a>
+    </div>
+  </nav>
+
+  <div class="header">
+    <img src="공포일러스트.png" alt="Illustration Left">
+    <div>
+      <h1>미지의 주술 세계로 들어가 보세요</h1>
+      <p>미지의 주술과 그 방법을 구경해보세요.</p>
+    </div>
+    <img src="공포일러스트.png" alt="Illustration Right">
+  </div>
+
+
+  <div class="cards-container">
+
+    <div class="card">
+      <img src="분신사바1.png" alt="분신사바" class="first">
+      <img src="분신사바2.png" alt="분신사바" class="second">
+    </div>
+
+    <div class="card">
+      <img src="위자보드1.png" alt="위자보드" class="first">
+      <img src="위자보드2.png" alt="위자보드" class="second">
+    </div>
+
+    <div class="card">
+      <img src="나숨1.png" alt="나홀로 숨바꼭질" class="first">
+      <img src="나숨2.png" alt="나홀로 숨바꼭질" class="second">
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Occultis. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

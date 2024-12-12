@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occultis - Escape Rooms</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    nav .logo img {
+      height: 60px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .header img {
+      width: 100px;
+      height: auto;
+    }
+
+    .escape-room-section {
+      margin: 20px auto;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .escape-room-card {
+      width: 270px;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .escape-room-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .escape-room-image {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .escape-room-details {
+      padding: 15px;
+    }
+
+    .escape-room-details h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .escape-room-details p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .rating-section {
+      margin-top: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .rating-section .fear-level {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .address-section {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="로고 누끼.png" alt="Occultis Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="places.html">Places</a>
+      <a href="rituals.html">Rituals</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="ghost-story.html">Ghost Story</a>
+      <a href="escape-room.html">Escape Room</a>
+    </div>
+  </nav>
+
+  <div class="header">
+    <img src="공포일러스트.png" alt="Illustration Left">
+    <div>
+      <h1>공포 방탈출 추천</h1>
+      <p>무시무시한 분위기의 방탈출을 경험해보세요.</p>
+    </div>
+    <img src="공포일러스트.png" alt="Illustration Right">
+  </div>
+
+  <div class="escape-room-section">
+    <div class="escape-room-card">
+      <img src="홍대 리페인팅.jpg" alt="Escape Room 1" class="escape-room-image">
+      <div class="escape-room-details">
+        <h3>인육 판매자</h3>
+        <p>경찰 지망생인 나. 우연히 알게 된 인육 판매자가 머물렀던 곳...<br>한 명은 잡혔지만, 나는 공범이 있다고 확신했다.
+          나는 친구들과 증거를 찾기 위해 머물렀던 곳에 들어가게 됐는데...</p>
+        <div class="rating-section">
+          <span class="fear-level">공포지수: ★★★☆☆</span>
+        </div>
+        <div class="address-section">
+          <p>위치: 서울 마포구 어울마당로 70 4층 엑스이스케이프 홍대상상마당점</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="escape-room-card">
+      <img src="코드케이.jpg" alt="Escape Room 2" class="escape-room-image">
+      <div class="escape-room-details">
+        <h3>저주받은 산장</h3>
+        <p>“풍경, 객실 뭐하나 나무랄 데 없어. 쿠폰 적용했더니 만원이야. 일단 지른다. 환불 안되니까 무조건 가는 거다.”
+          ‘슬슬 여행 기분 나네’ 하던 게 불과 1시간 전이다.
+          숙소에 도착..그런데 이 음산한 분위기는 도대체 뭐란 말인가?</p>
+        <div class="rating-section">
+          <span class="fear-level">공포지수: ★★★★☆</span>
+        </div>
+        <div class="address-section">
+          <p>위치: 서울시 강남구 역삼동 813-4 지층</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="escape-room-card">
+      <img src="마스터키.jpg" alt="Escape Room 3" class="escape-room-image">
+      <div class="escape-room-details">
+        <h3>B미술학원 13호실</h3>
+        <p>그날 이후로 언니는 돌아오지 않았다. 얼마전 언니에게 걸려온 한통의 전화... "무서워"라는 짧은 그 말이 언니와의 마지막 연락이었다.</p>
+        <div class="rating-section">
+          <span class="fear-level">공포지수: ★★★☆☆</span>
+        </div>
+        <div class="address-section">
+          <p>위치: 서울 마포구 독막로 65-1 지하1층</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="escape-room-card">
+      <img src="콜드케이.jpg" alt="Escape Room 4" class="escape-room-image">
+      <div class="escape-room-details">
+        <h3>인하로 77번 길(2호점)</h3>
+        <p>동생과 함께 산책을 하는데 뒤에 수상한 어른들이 따라오는 것을 발견합니다. 도망치려고 했지만 꼼짝없이 기절하게 되고...</p>
+        <div class="rating-section">
+          <span class="fear-level">공포지수: ★★☆☆☆</span>
+        </div>
+        <div class="address-section">
+          <p>위치: 인천광역시 미추홀구 인하로77번길 7 C페이스 3층</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Occultis. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

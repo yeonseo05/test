@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occultis - Ghost Stories</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    nav .logo img {
+      height: 80px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .header img {
+      width: 100px;
+      height: auto;
+    }
+
+    .story-section {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 1200px;
+    }
+
+    .story-category {
+      margin-bottom: 40px;
+    }
+
+    .story-category h2 {
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .story-category h2 img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .story-card {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 20px;
+    }
+
+    .story-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .story-details {
+      flex: 1;
+    }
+
+    .story-details h3 {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .story-details p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="로고 누끼.png" alt="Occultis Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="places.html">Places</a>
+      <a href="rituals.html">Rituals</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="ghost-story.html">Ghost Story</a>
+      <a href="escape-room.html">Escape Room</a>
+    </div>
+  </nav>
+
+  <div class="header">
+    <img src="공포일러스트.png" alt="Illustration Left">
+    <div>
+      <h1>유명한 일화</h1>
+      <p>소름 돋는 이야기들을 만나보세요.</p>
+    </div>
+    <img src="공포일러스트.png" alt="Illustration Right">
+  </div>
+
+  <div class="story-section">
+
+    <div class="story-category">
+      <h2><img src="한 달.png" alt="Monthly Icon"> 월간 베스트</h2>
+      <div class="story-card">
+        <div class="story-details">
+          <h3>거울을 못 보는 이유</h3>
+          <p>거울을 보며 앞머리 정리를 하고 있었어요.뒤에 계단이 있어서 거울에 그 계단이 비쳤는데 정리하다보니 계단 맨 위에 하얀 발이 보이는거에요. 
+            그래서 누가 이 날씨에 미쳤다고 맨발로 저러지 싶어서 뒤를 봤는데 아무도 없었어요.순간 몸 굳고 다시 정신을 차리고 거울을 봤더니 몇 칸 더 내려온 상태였어요.
+          </p>
+        </div>
+      </div>
+      <div class="story-card">
+        <div class="story-details">
+          <h3>모텔 귀신</h3>
+          <p>어떤 손님이 방에서 썩은내가 너무나서 못 있겠다고 방을 바꿔달라는겁니다. 그래서 뭐지.. 생각하다가 바꿔주고 그 방을 들어가봤습니다. 
+            <br>그런데 정말 무슨 토사물 1주일 삭힌 냄새가 나는겁니다.그래서 일단 락스를 들고 화장실을 문지르고 있는데<br>무언가가 객실안으로 슉 들어가길래 뭔가하고 봤는데
+            아무도 없더군요.잘못봤나 싶어서 우선 청소를 마저하다가 객실에 흐릿한 검은 물체가 있길래 다가가서 방안을 봤더니 사람이 의자에 거꾸로 앉아서 쳐다보고 있었습니다. 
+            너무 소름이 돋아서 부모님을 불러서<br>다시 들어가봤더니 냄새는 커녕 의자도 책상에 정상적으로 들어가있었어요..
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="story-category">
+      <h2><img src="일주일.png" alt="Weekly Icon"> 주간 베스트</h2>
+      <div class="story-card">
+        <div class="story-details">
+          <h3>머리가 왜 거기에..</h3>
+          <p>엄마랑 할머니댁 가려고 버스 탔는데 앞쪽에 앉아있던 할아버지가 우리 뒷쪽에 줄서서 타던 아저씨보고 막 자지러지듯이 소리를 지르면서 고꾸라지시는거야. 
+             <br>그래서 잠시뒤에 경찰하고 119 왔는데 그 아저씨 가방에 여자 머리통이 들어있었어. 십몇년이 지났는데 아직도 생각나
+          </p>
+        </div>
+      </div>
+      <div class="story-card">
+        <div class="story-details">
+          <h3>도플갱어</h3>
+          <p>꿈에 나말고 나랑 똑같이 생긴 애가 엄청 서럽게 울길래 왜 우냐고 했는데 엄마를 잃어버렸다길래 한참 달래다가 깼는데 일주일도 채 안돼서 엄마 집 나감
+            <br>현재까지도 집에 안들어왔어 친척도 아예 연락이 안된다고 우리도 친척도 생사를 모르는 상태야.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Occultis. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

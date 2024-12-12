@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occultis - Places</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+    }
+
+    nav .logo img {
+      height: 80px;
+    }
+
+    nav .menu {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 150px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    .header img {
+      width: 100px;
+      height: auto;
+    }
+
+    .places-container {
+      margin: 20px auto 50px;
+      padding: 20px;
+      max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .place-card {
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 300px;
+    }
+
+    .place-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .place-image {
+      width: 40%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .place-content {
+      padding: 20px;
+      flex: 1;
+    }
+
+    .place-content .country {
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 10px;
+    }
+
+    .place-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.8rem;
+      color: #333;
+    }
+
+    .place-content p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      width: 100%;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <a href="index.html">
+        <img src="로고 누끼.png" alt="Occultis Logo">
+      </a>
+    </div>
+    <div class="menu">
+      <a href="places.html">Places</a>
+      <a href="rituals.html">Rituals</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="ghost-story.html">Ghost Story</a>
+      <a href="escape-room.html">Escape Room</a>
+    </div>
+  </nav>
+
+  <div class="header">
+    <img src="공포일러스트.png" alt="Illustration Left">
+    <div>
+      <h1>세계 각국의 신비로운 장소 탐험하기</h1>
+      <p>공포에서 신비까지, 미지의 장소들을 탐험하세요.</p>
+    </div>
+    <img src="공포일러스트.png" alt="Illustration Right">
+  </div>
+
+   <div class="places-container">
+    <div class="place-card">
+      <div class="place-image" style="background-image: url('멕시코\ 인형의\ 섬.jpg');"></div>
+      <div class="place-content">
+        <div class="country">멕시코</div>
+        <h2>The Island of the Dolls</h2>
+        <p>멕시코에 위치한 작은 섬이다. 섬 곳곳에 인형들이 섬 여기저기에 매달려 있다.
+           방치된 자연환경에서 부식되고 부패한 인형의 모습이 상당히 공포스러운 분위기를 자아낸다.
+           일부 인형에는 사람이 다가오거나 건드리면 음성이 자동으로 재생되는 스피커가 들어있고 배터리가 아직도 남은 것인지 여전히 작동하기 때문에 깜짝 놀랄 수 있다.</p>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="place-image" style="background-image: url('아오키가하라.jpg');"></div>
+      <div class="place-content">
+        <div class="country">일본</div>
+        <h2>Aokigahara</h2>
+        <p>아오키가하라 수해를 배경으로 1960년, '마쓰모토 세이초'가 소설 파도의 탑(波の塔)을 출판하자 자살의 명소로 떠오른 바 있다.
+           그리하여 자살 희망자들이 모이다 보니 다른 숲보다 자살자가 많고, 종종 산책로에서 멀지 않은 곳에서 시체가 발견된다.
+           1998년에 시체 73구가 발견되었고, 2002년에 78구, 2003년에 100구, 2004년에 108구로 자살자 수는 늘어만 갔다.
+           2010년에는 247명이 자살을 시도해서 54명이 사망했다.</p>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="place-image" style="background-image: url('프리피야트.jpg');"></div>
+      <div class="place-content">
+        <div class="country">우크라이나</div>
+        <h2>Pripyat</h2>
+        <p>우크라이나 북부 키이우주에 위치한 도시로 한때 인구가 5만 명에 가까웠으나
+           체르노빌 원자력 발전소 폭발 사고로 인해 모든 사람들이 떠나 버린 이후에는 유령도시가 되었다.
+           관광 목적으로 출입할 때는 '어떤 위험이 있더라도 우크라이나 정부는 절대 책임을 지지 않는다.'는 내용의 계약서를 쓰고 들어가야 하며
+           참사 당시 방사능 폐기물을 여기저기에 묻어둔 탓에 가이드의 말을 듣지 않거나 제염이 안 된 곳에 가서는 안 되고 방사능 물질이 묻은 것들을 건드려서는 절대 안 된다.</p>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="place-image" style="background-image: url('케이마다 그란지 섬.jpg');"></div>
+      <div class="place-content">
+        <div class="country">브라질</div>
+        <h2>Ilha da Queimada Grande</h2>
+        <p>이 섬에는 보트롭스 인술라리스라는 매우 흉포한 성격에 치명적인 맹독을 지닌 살무사 계열 독사들이 득실거리고 있다.
+           오죽하면 영미권에서 케이마다 그란지 섬을 Snake Island라고 칭할 정도다. 이렇게 독사들이 우글거리기 때문에 브라질 정부는 이 섬의 출입을 엄격하게 통제하고 있으며
+           접근할 수 있는 사람은 오직 브라질 해군 및 해군 산하 해병대 대원들과 해안경비대 소속 해양경찰관들, 생물종 다양성 보존·연구를 주로 하는 치쿠 멘지스 연구소 소속의 일부 과학자들 뿐이다.</p>
+      </div>
+    </div>
+    <div class="place-card">
+      <div class="place-image" style="background-image: url('까르니마따.jpg');"></div>
+      <div class="place-content">
+        <div class="country">인도</div>
+        <h2>Karnimata Temple</h2>
+        <p>이 관광지에는 2만마리의 쥐가 자유롭게 활보하고 다닌다. 이 구역의 숭배자들은 이들을 “어린 아이들”이라 부르며 직접 준비한 곡식과 우유, 그리고 사탕 등을 먹인다.
+           쥐들이 와서 음식을 먹으면 행운이 따른다고 믿기 때문이다. 심지어는 쥐들이 남긴 음식을 먹는 사람들도 있다.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 Occultis. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
+
